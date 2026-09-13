@@ -71,8 +71,9 @@ a:focus-visible {
 
 .menu__items {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
-    gap: 6px 16px;
+    grid-template-columns: repeat(5, max-content);
+    justify-content: center;
+    gap: 8px 32px;
     padding-block: 17px;
 }
 
@@ -192,7 +193,6 @@ a:focus-visible {
 
 .example__code {
     max-width: 100%;
-    margin-top: 14px;
     padding: 18px 20px;
     overflow-x: auto;
     background: #edf2f0;
@@ -236,6 +236,24 @@ a:focus-visible {
     height: auto;
 }
 
+.main__experience {
+    display: grid;
+    gap: 18px;
+}
+
+.main__experience > .main__subtitle {
+    margin-bottom: 0;
+}
+
+.main__example {
+    display: grid;
+    gap: 18px;
+}
+
+.main__example > .main__subtitle {
+    margin-bottom: 0;
+}
+
 @media (max-width: 700px) {
     .main__container {
         padding-block: 30px 42px;
@@ -243,6 +261,10 @@ a:focus-visible {
 
     .main__container > section {
         padding: 22px;
+    }
+
+    .menu__items {
+        grid-template-columns: repeat(3, max-content);
     }
 
     .skills__items {
