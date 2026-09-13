@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>CV</title>
+</head>
+<body>
+
+<div class="wrapper">
+    <header class="header">
+        <div class="header__container">
+            <nav class="header__menu menu">
+                <ul class="menu__items">
+                    <li class="menu__item"><a href="#about">About me</a></li>
+                    <li class="menu__item"><a href="#skills">Skills</a></li>
+                    <li class="menu__item"><a href="#code-examples">Code Examples</a></li>
+                    <li class="menu__item"><a href="#work-experience">Work Experience</a></li>
+                    <li class="menu__item"><a href="#education">Education</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__container">
+            <h1 class="main__title">Anna Golosova</h1>
+            <section id="about" class="main__about about">
+                <h2 class="main__subtitle">About me</h2>
+                <div class="about">
+                    <div class="about__content">
+                        <p>
+                            I am a frontend developer with over one year and three months of commercial
+                            experience building interfaces for enterprise administration
+                            systems. I work with Angular, TypeScript, RxJS, and REST APIs.
+                            I value clear interfaces, maintainable code, and continuous
+                            learning.
+                        </p>
+                    </div>
+                    <div class="about__contacts">
+                        <h3>Contacts</h3>
+                        <ul>
+                            <li>GitHub: <a href="https://github.com/AneiraW">github.com/AneiraW</a></li>
+                            <li>Email: golosovaannae@gmail.com</li>
+                            <li>Discord: AneiraW</li>
+                        </ul>
+                    </div>
+                    <div class="about__avatar"><img class="about__image" src="img/avatar.jpg" alt="avatar"></div>
+                </div>
+            </section>
+            <section id="skills" class="main__skills skills">
+                <h2 class="main__subtitle">Skills</h2>
+                <ul class="skills__items">
+                    <li>
+                        <strong>Languages and markup:</strong>
+                        TypeScript, JavaScript, HTML, CSS, SCSS
+                    </li>
+                    <li>
+                        <strong>Frameworks and libraries:</strong>
+                        Angular, RxJS, NgRx
+                    </li>
+                    <li>
+                        <strong>Tools:</strong>
+                        Git, GitHub, Nx, Jest, WebStorm
+                    </li>
+                    <li>
+                        <strong>Other experience:</strong>
+                        REST APIs, WebSocket, responsive layouts
+                    </li>
+                </ul>
+            </section>
+            <section id="code-examples" class="main__example example">
+                <h2 class="main__subtitle">Code Examples</h2>
+                <p>The function finds the smallest integer in a non-empty array.</p>
+                <pre class="example__code"><code>function findSmallestInt(arr) {
+  return arr.reduce(function (acc, val) {
+    if (val &gt; acc) val = acc;
+    return val;
+  });
+}</code></pre>
+            </section>
+            <section id="work-experience" class="main__experience experience">
+                <h2 class="main__subtitle">Work Experience</h2>
+                <div class="experience">
+                    I am a Frontend Developer. I have one year and three months of commercial experience. I developed and maintained the frontend of two enterprise administration systems.
+                </div>
+                <ul class="experience__projects">
+                    <li>
+                        <strong>CV — educational project:</strong> a responsive resume page built with HTML and CSS.
+                        <a target="_blank" href="https://github.com/AneiraW/rsschool-cv">Source code</a>
+                    </li>
+                </ul>
+            </section>
+            <section id="education" class="main__education education">
+                <h2 class="main__subtitle">Education</h2>
+                <div class="education">
+                    <p class="education__english">
+                        English level: B1. I read technical documentation in English and continue to improve my language skills.
+                    </p>
+                    <div class="education__body">
+                        <p>Higher education — Applied Informatics, 2011.</p>
+                        <p>RS School — JS / Front-end Short Track Course (in progress).</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <ul class="footer__items">
+                <li class="footer__item"><a target="_blank" class="footer__link" href="https://github.com/AneiraW">GitHub</a></li>
+                <li class="footer__item">2026</li>
+                <li class="footer__item"><img class="footer__image" src="img/logo.svg" alt="logo"></li>
+                <li class="footer__item"><a target="_blank" class="footer__link" href="https://rs.school/courses/short-track">RSSchool</a></li>
+            </ul>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>
